@@ -1,0 +1,25 @@
+---
+const { platform, username } = Astro.props;
+const isLinkedin = platform === "linkedin";
+---
+
+<a href={`https://www.${platform}.com${isLinkedin ? "/in" : ""}/${username}`}
+    >{platform}</a
+>
+
+<style>
+    a {
+        padding: 0.5rem 1rem;
+        color: white;
+        background-color: #4c1d95;
+        text-decoration: none;
+        display: inline-block;
+        transition: transform 0.1s ease-in-out,
+            background-color 0.1s ease-in-out;
+    }
+
+    a:hover {
+        transform: rotate(-5deg);
+        background-color: black;
+    }
+</style>

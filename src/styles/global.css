@@ -18,6 +18,11 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+  color: palevioletred;
+}
+
+h2 {
+  color: purple;
 }
 
 /* nav styles */
@@ -52,6 +57,7 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #4c1d95;
 }
 
 .nav-links a:hover,
